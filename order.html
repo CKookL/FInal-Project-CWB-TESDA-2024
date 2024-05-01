@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Final Project</title>
+</head>
+<body >
+    <div class="navbar-fixed">
+    <nav class="nav ">
+        <a href="" style="color: #F49B0C;">Pizzaria.</a>
+        <ul class="right hide-on-med-and-down">
+            <li ><a href="index.html">HOME</a></li>
+            <li><a href="index.html">ABOUT US</a></li>
+            <li><a href="index.html">MENU</a></li>
+            <li><a href="index.html">CONTACT</a></li>
+        </ul>
+        <a href="order.html"><i class="fa-solid fa-cart-shopping" style="color:#F49B0C"></i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </nav>
+</div>
+
+    <ul  class="sidenav" id="mobile-demo">
+        <li ><a href="index.html">HOME</a></li>
+        <li><a href="index.htmls">ABOUT US</a></li>
+        <li><a href="index.html">MENU</a></li>
+        <li><a href="index.html">CONTACT</a></li>
+        <li><a href="order.html" style="margin-top: 40px;"><i class="fa-solid fa-cart-shopping" style="color:#F49B0C"></i></a></li>
+    </ul>
+
+    <img src="/imgs/background-hero.png" alt=""style="position: absolute; width: 100%; z-index: -1;" data-aos="fade" data-aos-duration="1000" data-aos-delay="150">
+
+    <div class="container">
+
+       
+
+          <div class="awesome-pizza"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" >
+            <img src="imgs/3pizza.png" alt="">
+            <div class="awesome-text">
+                <p>40+</p>
+                <p>Awesome Pizza</p>
+            </div>
+        </div>
+    
+        <div class="pizzaria" >
+            <div class="pizzaria-header">
+                <h4 class="black-text">Pizzaria</h4>
+                <ul class="right">
+                    <li>
+                        <form>
+                        <div class="input-field">
+                          <input id="search" type="search" required>
+                          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        </div>
+                      </form>
+                    </li>
+                    <li>
+                        <div class="input-field col s12">
+                        <select style="z-index: 1000;">
+                          <option value="" disabled selected>Filter</option>
+                          <option value="1">Most Popular</option>
+                          <option value="2">Low To Highest</option>
+                          <option value="3">Highest To Low</option>
+                        </select>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="right hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+            <li>
+                <form>
+                <div class="input-field">
+                  <input id="search" type="search" required>
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                </div>
+              </form>
+            </li>
+            <li>
+                <div class="input-field col s12">
+                <select >
+                  <option value="" disabled selected>Filter</option>
+                  <option value="1">Most Popular</option>
+                  <option value="2">Low To Highest</option>
+                  <option value="3">Highest To Low</option>
+                </select>
+              </div>
+            </li>
+        </ul>
+    
+        <div class="category row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+            <div class="col s12 left-category" >
+             <a href="" class="active">All</a>
+                <ul>
+                    <li><a href="">Hawaiian</a></li>
+                    <li><a href="">Neapolitan</a></li>
+                    <li><a href="">Chicago Deep-Dish</a></li>
+                    <li><a href="">Margherita</a></li>
+                    <li><a href="">Sicilian</a></li>
+                    <li><a href="">New York Style</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="row  scrollspy" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+            <div class="col s6 m6 l4 xl4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+             <div class="card">
+                <div class="card-image">
+                  <img src="imgs/6.jpg">
+                  <span class="card-title">Pizza</span>
+                </div>
+                <div class="card-content">
+                  <p>$10</p>
+                  <a href="#">Buy</a>
+                </div>
+            </div>
+          </div>
+            <div class="col s6 m6 l4 xl4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+             <div class="card">
+                <div class="card-image">
+                  <img src="imgs/2.jpg">
+                  <span class="card-title">Pizza</span>
+                </div>
+                <div class="card-content">
+                  <p>$10</p>
+                  <a href="#">Buy</a>
+                </div>
+            </div>
+          </div>
+          <div class="col s6 m6 l4 xl4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+            <div class="card">
+               <div class="card-image">
+                 <img src="imgs/3.jpg">
+                 <span class="card-title">Pizza</span>
+               </div>
+               <div class="card-content">
+                 <p>$10</p>
+                 <a href="#">Buy</a>
+               </div>
+           </div>
+         </div>
+         <div class="col s6 m6 l4 xl4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+            <div class="card">
+               <div class="card-image">
+                 <img src="imgs/4.jpg">
+                 <span class="card-title">Pizza</span>
+               </div>
+               <div class="card-content">
+                 <p>$10</p>
+                 <a href="#">Buy</a>
+               </div>
+           </div>
+         </div>
+         <div class="col s6 m6 l4 xl4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550">
+            <div class="card">
+               <div class="card-image">
+                 <img src="imgs/5.jpg">
+                 <span class="card-title">Pizza</span>
+               </div>
+               <div class="card-content">
+                 <p>$10</p>
+                 <a href="#">Buy</a>
+               </div>
+           </div>
+         </div>
+         <div class="col s6 m6 l4 xl4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="650">
+            <div class="card">
+               <div class="card-image">
+                 <img src="imgs/1.jpg">
+                 <span class="card-title">Pizza</span>
+               </div>
+               <div class="card-content">
+                 <p>$10</p>
+                 <a href="#">Buy</a>
+               </div>
+           </div>
+         </div>
+
+        </div>
+    </div>
+
+
+        <div class="payment container">
+            <h5 style="font-family: 'Exo 2', sans serif; font-weight: 700;">Order Details</h5>
+
+            <div class="row" style="margin-top: 30px;">
+                <div class="col s12 m6 l6" style="margin-bottom: 50px;">
+                    <img src="imgs/order.png" alt="">
+                    <img src="imgs/order.png" alt="">
+                    <img src="imgs/order.png" alt="">
+                    <img src="imgs/order.png" alt="">
+                </div>
+
+                <div class="col s12 m6 l6 row" style="background-color: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 2px rgba(0, 0, 0, 0.164)">
+                    <div class="input-field col s12" >
+                        <input id="fullName" placeholder=""  type="text">
+                        <label for="fullName">Full Name</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <input id="fullAdr" placeholder=""  type="text">
+                        <label for="fullAdr">Full Address</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <input id="contactInfo" placeholder=""  type="text">
+                        <label for="contactInfo">Contact Info</label>
+                    </div>
+
+                        <div class="col s12"><label style="padding: 0;">Payment Method</label></div> 
+                        <div class="col s4"><a href="" class="btn active" style="width: 100%;">COD</a></div>
+                        <div class="col s4"><a href="" class="btn" style="width: 100%;">Card/Debit</a></div>
+                        <div class="col s3"><a href="" class="btn" style="width: 100%;"><i class="fa-solid fa-plus" style="font-size: 15px;"></i></a></div>
+                        <div class="col s12" ><a href="" class="btn white-text" style="width: 100%; margin-top: 90px; background-image: linear-gradient(-250deg, #8f5800 1%, #764900 60%);">PURCHASE</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="footer" >
+        <div class="footer-img">
+            <h4 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50" class="white-text center" style="font-family: serif-pro, sans serif;">"Life is too short for mediocre pizza. Indulge in every slice, savor every moment."</h4>
+        </div>
+        <div class="background-footer row  scrollspy" id="contact">
+            <div class="contact" >
+                <h1>Pizzaria</h1>
+                <div class="bottom-contact" >
+                    <a href="" class="white-text">
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>xxxx.xxx@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="" class="white-text">
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>0-000-000-000</p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="function.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+      
+    </script>
+</body>
+</html>
