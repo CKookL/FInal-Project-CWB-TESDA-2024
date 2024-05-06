@@ -165,12 +165,8 @@ h4{
     display: flex;
 }
 
-.input-field.col.s12 ul{
-    z-index: 99;
-}
 
 .dropdown-content li>span{
-    z-index: 999;
     color: #000000;
 }
 
@@ -340,7 +336,9 @@ input[type=search]:not(.browser-default){
     width: 90%;
 }
 .input-field.col.s12{
+    z-index: 99;
     padding-left: 40px;
+    position: sticky;
 }
 label.active, label{
     padding-left: 35px;
@@ -519,6 +517,10 @@ input[type=text]:not(.browser-default){
         height: auto;
     }
 
+    .about-us img{
+        max-height: 200px;
+    }
+
     .about-text p{
         font-size: 15px;
     }
@@ -528,6 +530,13 @@ input[type=text]:not(.browser-default){
 
     .input-field.col.s12, label.active, label{
         padding-left: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    li .input-field.col.s12{
+        width: 60%;
+        margin-left: auto;
     }
 }
 
