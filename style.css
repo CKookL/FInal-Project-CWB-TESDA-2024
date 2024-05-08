@@ -55,23 +55,41 @@ nav a.active{
     display: none;
 }
 .sidenav{
-
     padding: 20px 0;
 }
 .sidenav li a.active{
-    border-left: #F49B0C 5px solid;
+    margin: 15px;
+    background-color: #F49B0C;
+    color: #ffffff;
 }
+.sidenav li a.active i{
+    color: #ffffff;
+}
+
 .sidenav li a{
+    border-radius: 15px;
+    margin: 15px;
     transition: ease-in-out 0.2s;
 }
+
 .sidenav li a:hover{
-    border-left: #F49B0C 5px solid;
+    color: #ffffff;
+    background-color: #F49B0C;
     transition: ease-in-out 0.2s;
-    padding-left: 20px;
 }
-.sidenav li a i.fa-solid.fa-cart-shopping{
+
+.sidenav li a:hover i{
+    color: #ffffff;
+}
+.sidenav li a .fa-solid.fa-cart-shopping{
     display: block;
     color: #000000;
+}
+.sidenav li a:hover .fa-solid.fa-cart-shopping{
+    color: #ffffff;
+}
+.sidenav li>a{
+    padding: 0 20px;
 }
 .hero{
     margin-top: 5vh;
@@ -175,6 +193,13 @@ h4{
 }
 .material-icons{
     line-height: 1.8;
+}
+.card-content p:nth-child(1){
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+.card-content p:nth-child(2){
+    color: #00000069;
 }
 
 .input-field{
